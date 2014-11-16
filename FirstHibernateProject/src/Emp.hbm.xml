@@ -1,0 +1,15 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping package="com.example.hibernate">
+       
+         <class name="Employee" table="EMPLOYEE">
+            <id name="id" column="ID" type="int">
+               <generator class="assigned"></generator>
+            </id> <!-- Tag id means it is a primary key and has a unique value -->
+              
+            <property name="name" column="NAME" type="string"></property> 
+            <property name="email" column="EMAIL" type="string"></property>
+         
+         </class>
+    
+    </hibernate-mapping>
